@@ -18,17 +18,42 @@
         .navbar {
             display: flex;
             justify-content: space-between;
-            padding: 20px;
+            padding: 15px 30px;
             background-color: #141414;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .navbar .logo img {
-            width: 100px;
+            width: 120px;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .navbar .nav-links a:hover {
+            color: red;
+            background-color: rgba(255, 255, 255, 0.1);
         }
 
         .navbar .user img {
-            width: 30px;
+            width: 35px;
             border-radius: 50%;
+            cursor: pointer;
         }
 
         .banner {
@@ -113,8 +138,6 @@
             color: #aaa;
         }
 
-        
-
         .footer {
             padding: 20px;
             background-color: #141414;
@@ -132,6 +155,13 @@
     <header class="navbar">
         <div class="logo">
             <img src="https://static.vecteezy.com/system/resources/thumbnails/025/322/804/small_2x/golden-letter-m-free-png.png" alt="Macflix Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">New Releases</a>
+            <a href="#">My List</a>
         </div>
         <div class="user">
             <img src="https://th.bing.com/th/id/R.945f33b643f2ceffcdae90fb57c61854?rik=Ox1dcxb6rfOngw&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon-bw%2ffree-avatars-icons-25.png&ehk=i8VrSYUn0ZsIdAnnI51DInJ0WdIXd3ukvat6kwZC%2f3c%3d&risl=&pid=ImgRaw&r=0" alt="User Avatar">
